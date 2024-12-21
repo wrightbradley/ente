@@ -26,8 +26,8 @@ jobs:
         with:
           dockerfile: web/Dockerfile
           directory: web
-          # Resultant package name will be ghcr.io/ente-io/server
-          image: web
+          # Resultant package name will be ghcr.io/wrightbradley/ente-io/server
+          image: ente-io/web
           registry: ghcr.io
           enableBuildKit: true
           multiPlatform: true
