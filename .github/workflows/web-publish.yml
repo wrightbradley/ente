@@ -1,4 +1,4 @@
-name: "Publish (server)"
+name: "Publish (web)"
 on:
   # Run manually, providing it the commit.
   #
@@ -24,10 +24,10 @@ jobs:
       - name: Build and push
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          dockerfile: server/Dockerfile
-          directory: server
+          dockerfile: web/Dockerfile
+          directory: web
           # Resultant package name will be ghcr.io/ente-io/server
-          image: server
+          image: web
           registry: ghcr.io
           enableBuildKit: true
           multiPlatform: true
